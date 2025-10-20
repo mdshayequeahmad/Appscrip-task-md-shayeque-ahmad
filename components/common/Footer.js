@@ -24,7 +24,7 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Logo</h3>
           <div className="footer-links">
-            <div>
+            <div className="footer-links-column">
               <a href="/about">About Us</a>
               <a href="/stories">Stories</a>
               <a href="#">Artisans</a>
@@ -32,7 +32,7 @@ const Footer = () => {
               <a href="/contact">Contact Us</a>
               <a href="#">EU Compliances Docs</a>
             </div>
-            <div>
+            <div className="footer-links-column">
               <a href="#">Orders & Shipping</a>
               <a href="#">Join/Login as a Seller</a>
               <a href="#">Payment & Pricing</a>
@@ -46,13 +46,15 @@ const Footer = () => {
 
         <div className="footer-section">
           <h3>QUICK LINKS</h3>
-          <a href="#">Orders & Shipping</a>
-          <a href="#">Join/Login as a Seller</a>
-          <a href="#">Payment & Pricing</a>
-          <a href="#">Return & Refunds</a>
-          <a href="#">FAQs</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms & Conditions</a>
+          <div className="quick-links">
+            <a href="#">Orders & Shipping</a>
+            <a href="#">Join/Login as a Seller</a>
+            <a href="#">Payment & Pricing</a>
+            <a href="#">Return & Refunds</a>
+            <a href="#">FAQs</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+          </div>
         </div>
 
         <div className="footer-section">
@@ -99,9 +101,11 @@ const Footer = () => {
 
           <h3>Logo ACCEPTS</h3>
           <div className="payment-icons">
-            <span>G Pay</span>
-            <span>Apple Pay</span>
-            <span>PayPal</span>
+            <img 
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtroC78ml1CoAkcniu2KDlpXVAojoYpYZTgA&s" 
+              alt="Payment Methods" 
+              className="payment-image"
+            />
           </div>
         </div>
       </div>
